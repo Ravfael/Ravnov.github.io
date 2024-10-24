@@ -9,6 +9,9 @@
     <!-- Bootsrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Link to my CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -44,7 +47,7 @@
     <section class="jumbotron text-center">
       <img src="img/photoprofil.jpg" alt="Ravfael" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Ravfael Novfito Handoyo</h1>
-      <p class="lead">Informatics Student | Universitas Islam Indonesia</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -59,15 +62,15 @@
     <section id="About">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="2000">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur iusto minus ipsa reprehenderit repellat suscipit provident sapiente fugit corrupti.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum quae nulla et facere quibusdam voluptate repellendus, officiis unde voluptates accusamus quam accusantium ea! Ratione!</p>
           </div>
         </div>
@@ -91,7 +94,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                 <img src="project/1.jpg.jpg" class="card-img-top" alt="project 1" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -99,7 +102,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
                 <img src="project/2.jpg.jpg" class="card-img-top" alt="project 2" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,7 +110,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
                 <img src="project/3.jpg.jpg" class="card-img-top" alt="project 3" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,7 +118,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
                 <img src="project/4.jpg.jpg" class="card-img-top" alt="project 4" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -123,7 +126,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
                 <img src="project/5.jpg.jpg" class="card-img-top" alt="project 5" />
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -132,6 +135,25 @@
             </div>
           </div>
         </div>
+        <!-- TES -->
+        <!-- <section id="my-keyboard">
+          <div class="container">
+            <div class="row text-center mb-3">
+              <div class="col">
+                <h2>My Keyboard</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h4 class="keyboard-name">Keychorn K2</h4>
+                  <a href="" class="btn btn-light keyboard-detail-button">Show Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- TES -->
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -153,10 +175,12 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
+            <!-- alert after user input form -->
             <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Thanks for subimitting dude!</strong> I've already received your message.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            <!-- alert after user input form -->
 
             <form name="contact-form">
               <div class="mb-3">
@@ -201,6 +225,25 @@
     <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Informatics Student | Universitas Islam Indonesia" });
+      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1.5, x: -50, opacity: 0, delay: 0.5 });
+    </script>
+    <!-- GSAP -->
+
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxtpkaF0nY7iqCqtxy27daI2yMF9aiI4bJbfOS3jPY_X6X_ud2uNBUIlu9FgyAUy6CzlA/exec";
       const form = document.forms["contact-form"];
@@ -215,7 +258,7 @@
         btnSubmit.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // show sbubmit alert, and hide loading
+            // show sbubmit, and hide loading
             btnLoading.classList.toggle("d-none");
             btnSubmit.classList.toggle("d-none");
             // show alert
