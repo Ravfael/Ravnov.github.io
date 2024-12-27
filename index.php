@@ -14,6 +14,8 @@
 
     <!-- Link to my CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <meta http-equiv="Cache-control" content="no-cache" />
   </head>
   <body id="home">
     <!-- Nav -->
@@ -176,34 +178,29 @@
         <div class="row justify-content-center">
           <div class="col-md-6">
             <!-- alert after user input form -->
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <!-- <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Thanks for subimitting dude!</strong> I've already received your message.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+            </div> -->
             <!-- alert after user input form -->
 
-            <form name="contact-form">
+            <form name="contact-form" method="POST" action="process_contact.php">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="name" />
+                <input type="text" class="form-control" id="name" name="name" required />
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" name="email" required />
               </div>
 
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-success btn-submit">Submit</button>
-
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                <span role="status">Loading...</span>
-              </button>
+              <button type="submit" class="btn-submit">Submit</button>
             </form>
           </div>
         </div>
@@ -243,9 +240,9 @@
       gsap.from(".display-4", { duration: 1.5, x: -50, opacity: 0, delay: 0.5 });
     </script>
     <!-- GSAP -->
-
+    <!-- 
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxtpkaF0nY7iqCqtxy27daI2yMF9aiI4bJbfOS3jPY_X6X_ud2uNBUIlu9FgyAUy6CzlA/exec";
+      const scriptURL = "process_contact.php";
       const form = document.forms["contact-form"];
       const btnSubmit = document.querySelector(".btn-submit");
       const btnLoading = document.querySelector(".btn-loading");
@@ -254,8 +251,7 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         // show loading
-        btnLoading.classList.toggle("d-none");
-        btnSubmit.classList.toggle("d-none");
+
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             // show sbubmit, and hide loading
@@ -269,6 +265,6 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
-    </script>
+    </script> -->
   </body>
 </html>
