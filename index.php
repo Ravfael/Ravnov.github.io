@@ -92,46 +92,46 @@
       <div class="container">
         <div class="row text-center">
           <div class="col mb-3">
-            <h2>My Gallery</h2>
+            <h2>My Favorite Tools</h2>
           </div>
           <div class="row justify-content-center">
             <div class="col-md-4 mb-3">
               <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="project/1.jpg.jpg" class="card-img-top" alt="project 1" />
+                <img src="project/fav1.png" class="card-img-top" alt="project 1" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Token Terminal</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-                <img src="project/2.jpg.jpg" class="card-img-top" alt="project 2" />
+                <img src="project/fav2.png" class="card-img-top" alt="project 2" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Messari</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-                <img src="project/3.jpg.jpg" class="card-img-top" alt="project 3" />
+                <img src="project/fav3.png" class="card-img-top" alt="project 3" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Dune Analytics</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
-                <img src="project/4.jpg.jpg" class="card-img-top" alt="project 4" />
+                <img src="project/fav4.png" class="card-img-top" alt="project 4" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">The Block</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4 mb-3">
               <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
-                <img src="project/5.jpg.jpg" class="card-img-top" alt="project 5" />
+                <img src="project/fav5.png" class="card-img-top" alt="project 5" />
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Bitget</p>
                 </div>
               </div>
             </div>

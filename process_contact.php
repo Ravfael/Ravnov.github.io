@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Menjalankan pernyataan SQL
     if ($stmt->execute()) {
         // Jika data berhasil disimpan, alihkan kembali ke halaman utama
-        header("Location: index.html");
+        header("Location: index.php");
         exit(); // Pastikan untuk berhenti setelah pengalihan
     } else {
         // Jika terjadi error, tampilkan error
