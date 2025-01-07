@@ -1,9 +1,9 @@
 <?php
 
-// Konfigurasi database
+
 $host = 'localhost';
-$user = 'root'; // Default user XAMPP
-$password = ''; // Default password XAMPP
+$user = 'root'; 
+$password = ''; 
 $dbname = 'portfolio';
 
 // Membuat koneksi
@@ -44,6 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->close();
 }
 
-// Menutup koneksi
+
 $conn->close();
 ?>
